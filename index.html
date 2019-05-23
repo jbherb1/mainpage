@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+
+
+	<script src="library/p5.js"></script>
+	<script src="library/p5.dom.js"></script>
+	<script src="library/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="functions.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		canvas {
+			margin:auto;
+		}
+
+
+.top-row{
+    width:300px;
+    height:200px;
+    top: 100px;
+    left: 250px;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .top-row img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .top-row:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .top-row :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .top-row h3{
+    top:50%
+  }
+  
+  .top-row:hover :not(img){
+    opacity:1;
+  }
+
+
+
+ .chaos{
+    width:300px;
+    height:200px;
+    top: 325px;
+    left: 250px;
+    display:inline-block;
+    position:absolute;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .chaos img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .chaos:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .chaos :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .chaos h3{
+    top:50%
+  }
+  
+  .chaos:hover :not(img){
+    opacity:1;
+  }
+
+
+
+
+ .ttt{
+    width:300px;
+    height:200px;
+    top: 325px;
+    left: 560px;
+    display:inline-block;
+    position:absolute;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .ttt img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .ttt:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .ttt :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .ttt h3{
+    top:50%
+  }
+  
+  .ttt:hover :not(img){
+    opacity:1;
+  }
+
+
+
+
+ .spaceburgers{
+    width:300px;
+    height:200px;
+    top: 325px;
+    left: 873px;
+    display:inline-block;
+    position:absolute;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .spaceburgers img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .spaceburgers:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .spaceburgers :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .spaceburgers h3{
+    top:50%
+  }
+  
+  .spaceburgers:hover :not(img){
+    opacity:1;
+  }
+
+
+
+
+
+
+.contact{
+    width:100px;
+    height:100px;
+    top: 0px;
+    left: 0px;
+   
+    position:absolute;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .contact img{
+    width:80%;
+    height:60%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .contact:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .contact :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .contact h3{
+    top:50%
+  }
+  
+  .contact:hover :not(img){
+    opacity:1;
+  }
+
+
+
+	</style>
+</head>
+
+
+<a href="https://jbherb1.github.io/Contact/"; class="contact">
+  <img src="contact.png">
+</a>
+
+
+<a href="https://jbherb1.github.io/sierpinski3d/" class="top-row">
+  <img src="sier3d.png">
+   <h2>Sierpinski's Triangle in 3D</h2>
+  <h3>Sierpinski's Recursion with a multi-dimensional twist that will crash your computer</h3>
+</a>
+
+
+<a href="https://jbherb1.github.io/sierpinski/" class="top-row">
+  <img src="sier.png">
+   <h2>Sierpinski's Triangle</h2>
+  <h3>Sierpinski's Recursion without a twist, but still will crash your computer</h3>
+</a>
+
+
+<a href="https://jbherb1.github.io/recursion/" class="top-row">
+  <img src="vtree.png">
+   <h2>V-Tree Recursion</h2>
+  <h3>1 line, 2 line, 3 line, 5 line? Not a good poem, but a nice picture</h3>
+</a>
+
+
+<a href="https://jbherb1.github.io/chaos/" class="chaos">
+  <img src="mandel.png">
+   <h2>Chaos with Mandelbrot</h2>
+  <h3>Some of these things look like the bacteria you raised in 9th grade Biology</h3>
+</a>
+
+
+<a href="https://jbherb1.github.io/TicTacToe/" class="ttt">
+  <img src="ttt.png">
+   <h2>Tic-Tac-Toe</h2>
+  <h3>Classic game, modern colors</h3>
+</a>
+
+
+<a href="https://jbherb1.github.io/SpaceBurgers/" class="spaceburgers">
+  <img src="space.jpg">
+   <h2>Space Burgers</h2>
+  <h3>Space Invaders, just with hamburgers and ketchup, and no way to win</h3>
+</a>
+
+
+
+
+<body background="universe.jpg">
+
+
+
+</body>
+</html>
